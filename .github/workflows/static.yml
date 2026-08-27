@@ -1,49 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nasrin Afrose - Portfolio</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-body{background:#0a0a0a;color:#fff;line-height:1.6}
-header{padding:80px 20px;text-align:center;background:linear-gradient(135deg,#ff6b9d,#c44dff)}
-header h1{font-size:50px} header p{font-size:20px;margin-top:10px}
-section{padding:60px 20px;max-width:900px;margin:auto}
-h2{color:#ff6b9d;margin-bottom:20px;font-size:32px;border-left:4px solid #ff6b9d;padding-left:15px}
-.skills{display:flex;gap:15px;flex-wrap:wrap}
-.skill{background:#1a1a1a;padding:10px 20px;border-radius:20px;border:1px solid #ff6b9d}
-.card{background:#1a1a1a;padding:20px;border-radius:15px;margin:15px 0}
-a.btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#ff6b9d;color:#fff;border-radius:25px;text-decoration:none;font-weight:bold}
-footer{text-align:center;padding:30px;background:#111;color:#888}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratap Roy | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        #home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #94a3b8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+            transform: translateY(-3px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-8px);
+            background: #334155;
+        }
+
+        .skill h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header>
-<h1>Nasrin Afrose</h1>
-<p>Web Developer | Designer | Creator</p>
-<a class="btn" href="#contact">Contact Me</a>
-</header>
-<section>
-<h2>About Me</h2>
-<p>Hi, I'm Nasrin Afrose, a passionate web developer who loves creating beautiful websites.</p>
-</section>
-<section>
-<h2>Skills</h2>
-<div class="skills">
-<div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div class="skill">React</div>
-</div>
-</section>
-<section>
-<h2>Projects</h2>
-<div class="card"><h3>Portfolio Website</h3><p>Personal responsive portfolio.</p></div>
-<div class="card"><h3>E-Commerce UI</h3><p>Modern shopping design concept.</p></div>
-</section>
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: nasrin@example.com</p>
-<p>GitHub: github.com/Anrin30</p>
-</section>
-<footer>© 2026 Nasrin Afrose</footer>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Pratap Roy</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="hero">
+            <h1>Hello, I'm <span>Pratap Roy</span></h1>
+            <h2>Web Developer & Student</h2>
+            <p>
+                Welcome to my personal portfolio website.
+                I am interested in website development, technology,
+                and creating modern and user-friendly websites.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                My name is <strong>Pratap Roy</strong>. I am a student
+                interested in web development and modern technology.
+                I enjoy learning HTML, CSS, JavaScript and creating
+                attractive websites. My goal is to improve my technical
+                skills and build useful web applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Website Structure</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Web Design & Styling</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Interactive Websites</p>
+            </div>
+
+            <div class="skill">
+                <h3>MS Office</h3>
+                <p>Word, Excel & PowerPoint</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>
+                    A personal portfolio website developed using
+                    HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>College Website</h3>
+                <p>
+                    A simple college website design containing
+                    information about courses and departments.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Business Website</h3>
+                <p>
+                    A responsive business website created to
+                    display services and contact information.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact">
+            <p><strong>Name:</strong> Pratap Roy</p>
+            <p><strong>Email:</strong> prataproy@example.com</p>
+            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+
+            <a href="mailto:prataproy@example.com" class="btn">
+                Send Email
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Pratap Roy | Course Website Development</p>
+    </footer>
+
 </body>
 </html>
