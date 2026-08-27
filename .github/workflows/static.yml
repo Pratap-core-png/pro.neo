@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nasrin Afrose - Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#0a0a0a;color:#fff;line-height:1.6}
+header{padding:80px 20px;text-align:center;background:linear-gradient(135deg,#ff6b9d,#c44dff)}
+header h1{font-size:50px} header p{font-size:20px;margin-top:10px}
+section{padding:60px 20px;max-width:900px;margin:auto}
+h2{color:#ff6b9d;margin-bottom:20px;font-size:32px;border-left:4px solid #ff6b9d;padding-left:15px}
+.skills{display:flex;gap:15px;flex-wrap:wrap}
+.skill{background:#1a1a1a;padding:10px 20px;border-radius:20px;border:1px solid #ff6b9d}
+.card{background:#1a1a1a;padding:20px;border-radius:15px;margin:15px 0}
+a.btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#ff6b9d;color:#fff;border-radius:25px;text-decoration:none;font-weight:bold}
+footer{text-align:center;padding:30px;background:#111;color:#888}
+</style>
+</head>
+<body>
+<header>
+<h1>Nasrin Afrose</h1>
+<p>Web Developer | Designer | Creator</p>
+<a class="btn" href="#contact">Contact Me</a>
+</header>
+<section>
+<h2>About Me</h2>
+<p>Hi, I'm Nasrin Afrose, a passionate web developer who loves creating beautiful websites.</p>
+</section>
+<section>
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div class="skill">React</div>
+</div>
+</section>
+<section>
+<h2>Projects</h2>
+<div class="card"><h3>Portfolio Website</h3><p>Personal responsive portfolio.</p></div>
+<div class="card"><h3>E-Commerce UI</h3><p>Modern shopping design concept.</p></div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: nasrin@example.com</p>
+<p>GitHub: github.com/Anrin30</p>
+</section>
+<footer>© 2026 Nasrin Afrose</footer>
+</body>
+</html>
